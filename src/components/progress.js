@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Line, Circle } from 'rc-progress';
 
-class Example extends Component {
+export default class Example extends Component {
   constructor() {
     super();
     this.state = {
@@ -46,8 +46,4 @@ class Example extends Component {
       </div>
     );
   }
-}
-
-ReactDOM.render(<Example />, document.getElementById('__react-content'));
-
-export default Example;
+};
