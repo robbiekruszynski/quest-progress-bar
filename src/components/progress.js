@@ -57,6 +57,5 @@ class Example extends Component {
   }
 }
 
-ReactDOM.render(<Example />, document.getElementById('__react-content'));
 
 export default Example;
