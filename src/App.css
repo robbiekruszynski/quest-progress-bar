@@ -20,3 +20,17 @@
 .App-link {
   color: #09d3ac;
 }
+
+
+.logo-img {
+  /* border:1px solid blue; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.container {
+  /* width:100vw; */
+  /* border:1px solid red; */
+}

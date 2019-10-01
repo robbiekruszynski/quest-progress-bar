@@ -31,16 +31,19 @@ class Example extends Component {
 
     return (
       <div>
-
+        <div className = "container">
+        <h3>Progress {percent}%</h3>
+        <img className ="logo-img" src = { Eth } />
         <div style={containerStyle}>
-        <img src = { Eth } />
         <Line percent={percent} strokeWidth="10" strokeColor={color} />
 
         </div>
         <p>
           <button type="button" onClick={this.changeState}>
-          Progress </button>
+            Progress
+          </button>
         </p>
+        </div>
       </div>
     );
   }
