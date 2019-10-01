@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Line, Circle } from 'rc-progress';
 
-export default class Example extends Component {
+class Example extends Component {
   constructor() {
     super();
     this.state = {
@@ -27,6 +27,11 @@ export default class Example extends Component {
     const containerStyle = {
       width: '250px',
     };
+    const circleContainerStyle = {
+      width: '250px',
+      height: '250px',
+      display: 'inline-block',
+    };
     return (
       <div>
         <h3>Line Progress {percent}%</h3>
@@ -38,6 +43,10 @@ export default class Example extends Component {
             strokeColor={[color, '#CCC']}
           />
         </div>
+        <h3>Circle Progress {percent}%</h3>
+        <div style={circleContainerStyle}>
+          <Circle percent={percent} strokeWidth="6" strokeLinecap="round" strokeColor={color} />
+        </div>
         <p>
           <button type="button" onClick={this.changeState}>
             Change State
@@ -46,4 +55,8 @@ export default class Example extends Component {
       </div>
     );
   }
-};
+}
+
+ReactDOM.render(<Example />, document.getElementById('__react-content'));
+
+export default Example;

@@ -10,8 +10,8 @@ function App() {
 
     <div className="App">
       <header className="App-header">
+      <Example></Example>
           <Line></Line>
-          <Example></Example>
       </header>
     </div>
   );
